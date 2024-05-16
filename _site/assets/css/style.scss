@@ -1,4 +1,3 @@
-// I stole this from https://alexander-taran.github.io/2022/06/08/adopting-dark-theme-in-jekyll-blog.html
 
 // We import the light theme first.
 @import "minima/skins/classic";
@@ -94,3 +93,5 @@ $table-border-color:    var(--table-border-color,$table-border-color);
     --table-border-color:     #{$table-border-color};
   }
 }
+
+// I stole this from https://alexander-taran.github.io/2022/06/08/adopting-dark-theme-in-jekyll-blog.html

@@ -26,6 +26,8 @@ github_username:  zachdthompson
 # Build settings
 markdown: kramdown
 remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
   
 minima:
   skin: dark
