@@ -6,8 +6,4 @@ layout: home
 
 ---
 
-
-There is nothing here right now. 
-
-
-HELLO WORLD!
+Welcome to my blog! This is where I will post writups of CTF solves I have done, as well as yap about interesting tech topics I am currently interested in!
