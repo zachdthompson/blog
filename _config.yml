@@ -29,11 +29,11 @@ plugins:
   - jekyll-feed
   
 minima:
-  skin: dark
+  skin: auto
 
 header_pages:
   - about.md
-  
+
 commonmark:
   options: ["UNSAFE", "SMART", "FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
