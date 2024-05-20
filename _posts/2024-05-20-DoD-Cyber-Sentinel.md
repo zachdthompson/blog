@@ -5,12 +5,14 @@ title: 2024 DoD Cyber Sentinel CTF
 
 <details>
 <summary> OSINT - Have You Bean Here Before?</summary>
+<br>
+
+# Summary
 
 This challenge gave you a photo, as seen below, and asked to find the MAC address of the WiFi the user was connected to.
 
-<br>
-<img src="{{site.url}}/assets/images/CTF/Sentinel2024/bean/OSINT_bean.png" alt="Bean Challenge" width="500"/>
-<br>
+![Bean Challenge]({{site.url}}/assets/images/CTF/Sentinel2024/bean/OSINT_bean.png){:.centered-image}
+
 
 # Solution
 
