@@ -14,7 +14,9 @@ title: 2024 DoD Cyber Sentinel CTF
 
 The first step in solving this OSINT challenge is to identify the location of the photo. The first thing I did was look for identifying information in the photo. Looking at the coffee cup, we can see a logo "PAUL" on the side facing us. 
 
-![Paul Cup]({{site.url}}/assets/images/CTF/Sentinel2024/bean/Paul.png){:width="200px"}
+<br>
+<img src="{{site.url}}/assets/images/CTF/Sentinel2024/bean/Paul.png" alt="Paul Cup" width="200"/>
+<br>
 
 Using Google, I simply searched for "Paul Restaurant", which the first result was the website for [Paul French Bakery & Cafe](https://www.pauldmv.com/). Navigating to the Locations Tab, we can see the following locations:
 
@@ -40,4 +42,4 @@ This BSSID was the correct one, giving me the flag of
 
 **C1{6C:CD:D6:BD:5B:51}**
 
-<details>
+</details>
