@@ -12,12 +12,10 @@ title: 2024 DoD Cyber Sentinel CTF
 This challenge gave you a photo, as seen below, and asked to find the MAC address of the WiFi the user was connected to.
 
 <br>
-<div class="center-image">
-    <img src="{{site.url}}/assets/images/CTF/Sentinel2024/bean/OSINT_bean.png" alt="Bean Challenge" width="500"/>
-</div>
-<br>
 
-![Bean Challenge]({{site.url}}/assets/images/CTF/Sentinel2024/bean/OSINT_bean.png){:.centered; width="500";}
+<img class="centered" src="{{site.url}}/assets/images/CTF/Sentinel2024/bean/OSINT_bean.png" alt="Bean Challenge" width="500"/>
+
+<br>
 
 # Solution
 
@@ -59,4 +57,4 @@ This BSSID was the correct one, giving me the flag of
 
 **C1{6C:CD:D6:BD:5B:51}**
 
-<details>
+</details>
