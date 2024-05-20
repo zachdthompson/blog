@@ -1,3 +1,8 @@
+---
+layout: post
+title: 2024 DoD Cyber Sentinel CTF
+---
+
 <details>
 <summary> OSINT - Have You Bean Here Before?</summary>
 
@@ -35,6 +40,6 @@ I noticed that one of the options available was "Paul Guest" which I assumed the
 
 This BSSID was the correct one, giving me the flag of
 
-C1{6C:CD:D6:BD:5B:51}
+**C1{6C:CD:D6:BD:5B:51}**
 
 <details>
