@@ -6,11 +6,13 @@ title: 2024 DoD Cyber Sentinel CTF
 <details>
 <summary> OSINT - Have You Bean Here Before?</summary>
 
+This challenge gave you a photo, as seen below, and asked to find the MAC address of the WiFi the user was connected to.
+
 <br>
 <img src="{{site.url}}/assets/images/CTF/Sentinel2024/bean/OSINT_Bean.png" alt="Bean Challenge" width="500"/>
 <br>
 
-# Solution
+#Solution
 
 The first step in solving this OSINT challenge is to identify the location of the photo. The first thing I did was look for identifying information in the photo. Looking at the coffee cup, we can see a logo "PAUL" on the side facing us. 
 
@@ -42,4 +44,4 @@ This BSSID was the correct one, giving me the flag of
 
 **C1{6C:CD:D6:BD:5B:51}**
 
-</details>
+<details>
