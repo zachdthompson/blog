@@ -17,6 +17,8 @@ This challenge gave you a photo, as seen below, and asked to find the MAC addres
 </div>
 <br>
 
+![Bean Challenge]({{site.url}}/assets/images/CTF/Sentinel2024/bean/OSINT_bean.png){:.centered; width="500";}
+
 # Solution
 
 The first step in solving this OSINT challenge is to identify the location of the photo. The first thing I did was look for identifying information in the photo. Looking at the coffee cup, we can see a logo "PAUL" on the side facing us. 
