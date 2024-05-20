@@ -10,13 +10,11 @@ title: 2024 DoD Cyber Sentinel CTF
 <img src="{{site.url}}/assets/images/CTF/Sentinel2024/bean/OSINT_Bean.png" alt="Bean Challenge" width="500"/>
 <br>
 
-#Solution
+# Solution
 
 The first step in solving this OSINT challenge is to identify the location of the photo. The first thing I did was look for identifying information in the photo. Looking at the coffee cup, we can see a logo "PAUL" on the side facing us. 
 
-<br>
-<img src="{{site.url}}/assets/images/CTF/Sentinel2024/bean/Paul.png" alt="Paul Cup" width="200"/>
-<br>
+![Paul Cup]({{site.url}}/assets/images/CTF/Sentinel2024/bean/Paul.png){:width="200px"}
 
 Using Google, I simply searched for "Paul Restaurant", which the first result was the website for [Paul French Bakery & Cafe](https://www.pauldmv.com/). Navigating to the Locations Tab, we can see the following locations:
 
