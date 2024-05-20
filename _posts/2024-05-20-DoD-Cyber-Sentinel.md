@@ -9,10 +9,10 @@ title: 2024 DoD Cyber Sentinel CTF
 This challenge gave you a photo, as seen below, and asked to find the MAC address of the WiFi the user was connected to.
 
 <br>
-<img src="{{site.url}}/assets/images/CTF/Sentinel2024/bean/OSINT_Bean.png" alt="Bean Challenge" width="500"/>
+<img src="{{site.url}}/assets/images/CTF/Sentinel2024/bean/OSINT_bean.png" alt="Bean Challenge" width="500"/>
 <br>
 
-#Solution
+# Solution
 
 The first step in solving this OSINT challenge is to identify the location of the photo. The first thing I did was look for identifying information in the photo. Looking at the coffee cup, we can see a logo "PAUL" on the side facing us. 
 
