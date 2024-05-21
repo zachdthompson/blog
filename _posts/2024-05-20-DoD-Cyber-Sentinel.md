@@ -129,7 +129,7 @@ This resulted in several thousand characters of what was very clearly Base64 enc
 This resulted in the decoded image being displayed:
 
 <br>
-<img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/exfil/Flag.png" alt="Flag"/>
+<img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/exfil/Flag.jpg" alt="Flag"/>
 <br>
 
 This image, as you can see, contains the flag:
