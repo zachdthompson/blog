@@ -63,7 +63,7 @@ This BSSID was the correct one, giving me the flag of
 
 This challenge gave you a wireshark packet capture, and you had to deduce what the flag was from there. Below is a link to the file:
 
-![]({{site.url}}/assets/files/CTF/Sentinel2024/exfil/exfiltrated.pcap)
+![Provided exfiltrated.pcap]({{site.url}}/assets/files/CTF/Sentinel2024/exfil/exfiltrated.pcap)
 
 Opening the packet capture, I could immediately see it was purely DNS traffic. It looked like the address came from an internal 192.168.0.0/16 private address range, pointing to google's DNS server (8.8.8.8). Below is a picture of what that looked like:
 
