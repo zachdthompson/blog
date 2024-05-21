@@ -7,6 +7,12 @@ title: 2024 DoD Cyber Sentinel CTF
 
 Last Saturday, I had the opportunity to compete in the 2024 Cyber Sentinel challenge, hosted by the DoD. There were over $15k in cash prizes, plus the ability to be considered for a full time job. From number on slack, there were nearly 3000 competitors. I ranked 119th with 1125 points, which puts me in roughly the top 3%, which I am really proud of considering it was my first solo CTF.
 
+<br>
+
+<img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/Score.png" alt="Overall Score"/>
+
+<br>
+
 Below are the challenges I solved, plus how I solved them. I learned a lot in these challenges, and I am excited to share my progress!
 
 <details>
