@@ -96,7 +96,6 @@ After that, I ran the following Python script on the file:
 ```python
 import pyshark
 import os
-import base64
 
 # Create file paths for the input and output
 cwd = os.getcwd()
@@ -120,7 +119,7 @@ with open (output_file, 'w+') as output:
     output.write(data)
 ```
 
-This resulted in several thousand characters of what was very clearly Base64 encoded data. I loaded this data into [Cyber Chef](https://cyberchef.org/). Cyber Chef has the wonderful magic wand, which was able to automatically detect that it was an image that had been encoded in Base64:
+This resulted in several thousand characters of what was very clearly Base64-like encoded data. I loaded this data into [Cyber Chef](https://cyberchef.org/). Cyber Chef has the wonderful magic wand, which was able to automatically detect that it was an image that had been encoded in Base32:
 
 <br>
 <img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/exfil/Cyber_Chef.png" alt="Cyber Chef"/>
