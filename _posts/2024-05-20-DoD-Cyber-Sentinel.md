@@ -136,3 +136,28 @@ This image, as you can see, contains the flag:
 **C1{dns_3xfil7r4t3d!}**
 
 </details>
+
+<details>
+<summary>Networking & Reconnaissance - Header Hinterlands</summary>
+
+# Summary
+
+This challenge gave you a folder containing most of the files you needed to setup a Docker container. The kicker was that it was missing the Docker compose file, so you couldn't just start it up and get it going. The flag would be embedded in the header of the website after you could get the Docker conatiner up and running.
+
+<br>
+<img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/heacer/Challenge.png" alt="Challenge Description"/>
+<br>
+
+# Solution
+
+While the intended solution was to setup a docker container and get the header from there, I instead just started browsing through the file structure. Eventually I came across the NGINX server config, which had the following configurations:
+
+<br>
+<img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/exfil/Header.png" alt="Header Data"/>
+<br>
+
+This showed the cookie they were embedding the data in the header, and I could clearly see that it was Base64 data. Plugging it into CyberChef, I got the flag:
+
+**C1{am@z1ng_wh@t_u_c@n_h1d3_1n_h3@d3rs}**
+
+</details>
