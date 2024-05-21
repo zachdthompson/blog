@@ -10,7 +10,7 @@ Last Saturday, I had the opportunity to compete in the 2024 Cyber Sentinel chall
 Below are the challenges I solved, plus how I solved them. I learned a lot in these challenges, and I am excited to share my progress!
 
 <details>
-<summary> OSINT - Have You Bean Here Before?</summary>
+<summary>OSINT - Have You Bean Here Before?</summary>
 
 # Summary
 
@@ -55,3 +55,8 @@ This BSSID was the correct one, giving me the flag of
 **C1{6C:CD:D6:BD:5B:51}**
 
 </details>
+
+<!-- <details>
+<summary>Exfil</summary>
+
+</details> -->
