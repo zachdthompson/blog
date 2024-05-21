@@ -27,6 +27,8 @@ markdown: CommonMarkGhPages
 remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
+
+google_analytics: G-4M0P86115W
   
 minima:
   skin: auto
