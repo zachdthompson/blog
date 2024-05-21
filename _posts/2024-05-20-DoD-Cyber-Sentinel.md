@@ -99,11 +99,11 @@ import os
 
 # Create file paths for the input and output
 cwd = os.getcwd()
-file = os.path.join(cwd, 'filtered.pcap')
+input_file = os.path.join(cwd, 'filtered.pcap')
 output_file = os.path.join(cwd, 'output.txt')
 
 # Load the packet capture
-cap = pyshark.FileCapture(file)
+cap = pyshark.FileCapture(input_file)
 data = str()
 
 # Loop through each packet, grab the query itself
