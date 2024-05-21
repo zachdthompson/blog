@@ -56,7 +56,84 @@ This BSSID was the correct one, giving me the flag of
 
 </details>
 
-<!-- <details>
-<summary>Exfil</summary>
+<details>
+<summary>Forensics - Exfil</summary>
 
-</details> -->
+# Summary
+
+This challenge gave you a wireshark packet capture, and you had to deduce what the flag was from there. Below is a link to the file:
+
+![]({{site.url}}/assets/files/CTF/Sentinel2024/exfil/exfiltrated.pcap)
+
+Opening the packet capture, I could immediately see it was purely DNS traffic. It looked like the address came from an internal 192.168.0.0/16 private address range, pointing to google's DNS server (8.8.8.8). Below is a picture of what that looked like:
+
+<br>
+<img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/exfil/Unfiltered.png" alt="Unfiltered Packet"/>
+<br>
+
+Looking at the requests, I was able to see that it was a seemingly random 31 character subdomain added to data.exfiltrated.com:
+
+<br>
+<img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/exfil/Request_Details.png" alt="Request Details"/>
+<br>
+
+I knew there was a data exfiltration method that involved sending data over arbitrary DNS requests, which would bypass many firewall rules. Most firewalls allow for the client to make DNS requests, otherwise their network would not function properly. What you can do is hide data in the requests, and program a server to listen for these requests and parse them back into the file. 
+
+I ran with this hunch, and I filtered the Wireshark capture with the following filter:
+
+```dns.qry.name contains "data.exfiltrated.com" && ip.dst == 8.8.8.8```
+
+This resulted in just the outbound requests, in sequential order, made to Google's DNS:
+
+<br>
+<img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/exfil/Filter_Applied.png" alt="Filter Applied"/>
+<br>
+
+I exported these results out into their own packet capture file. I did this so that I could work just with the data I wanted and I didnt have to add filters into my Python code.
+
+After that, I ran the following Python script on the file:
+
+```python
+import pyshark
+import os
+import base64
+
+# Create file paths for the input and output
+cwd = os.getcwd()
+file = os.path.join(cwd, 'filtered.pcap')
+output_file = os.path.join(cwd, 'output.txt')
+
+# Load the packet capture
+cap = pyshark.FileCapture(file)
+data = str()
+
+# Loop through each packet, grab the query itself
+for pkt in cap:
+    query = pkt.layers[3].qry_name
+
+    # remove the .data.exfiltrated.com from the packet
+    query = query.replace('.data.exfiltrated.com', '')
+    data += query
+
+# Write the output to a file
+with open (output_file, 'w+') as output:
+    output.write(data)
+```
+
+This resulted in several thousand characters of what was very clearly Base64 encoded data. I loaded this data into [Cyber Chef](https://cyberchef.org/). Cyber Chef has the wonderful magic wand, which was able to automatically detect that it was an image that had been encoded in Base64:
+
+<br>
+<img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/exfil/Cyber_Chef.png" alt="Cyber Chef"/>
+<br>
+
+This resulted in the decoded image being displayed:
+
+<br>
+<img class="center" src="{{site.url}}/assets/images/CTF/Sentinel2024/exfil/Flag.png" alt="Flag"/>
+<br>
+
+This image, as you can see, contains the flag:
+
+**C1{dns_3xfil7r4t3d!}**
+
+</details>
